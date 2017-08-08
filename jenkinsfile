@@ -2,7 +2,7 @@ pipeline {
    agent any
 
    options {
-     buildDiscarder(logRotator(artifactNumToKeepStr: '2', artifactNumToKeepStr: '1'))
+     buildDiscarder(logRotator(artifactNumToKeepStr: '2'))
    }
    stages{
      stage('build') {
